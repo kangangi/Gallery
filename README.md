@@ -44,6 +44,6 @@ To access this application on your command line, you need to clone it git clone 
 Currently, there are no known bugs. Contact wanjikukangangi@gmail.com for more info
 
 ## Licence
-This project is under the [MIT](https://github.com/kangangi/galleryIP/blob/master/LICENSE.md) licence
+This project is under the [MIT](https://github.com/kangangi/Gallery/blob/master/LICENSE) licence
 
 Copyright (c) 2020 **Diana Kangangi**

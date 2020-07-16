@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid" id="index">
+    {% if searched_images %}
+    <h2 class="header"> Category Search</h2>
+    <h2 class="header-alt">Found {{ searched_images|length }} image(s) of the category {{message}}</h2>
+
+    <div class="grid">
+
+        {% for image in searched_images%}
+        <div class=" card grid-item" >
+            <img style="object-fit: cover;" onclick="showModal('{{image.name}}','{{image.description}}','{{image.image.url}}','{{image.location}}','{{image.category}}')"
+                class="image img-responsive" src="{{image.image.url}}">
+        </div>
+        {% endfor%}
+        {% else %}
+        <h2 class="header-alt">Found 0 articles for the category </h2>
+        {% endif %}
+
+</div>
+{% endblock %}

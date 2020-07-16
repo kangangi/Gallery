@@ -1,0 +1,37 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<div class="container-fluid" id="index" >
+    
+    <p style="padding-top: 50px;">“We are making photographs to understand what our lives mean to us.”</p>
+
+        <div class="grid">
+
+            {% for image in images%}
+            <div class=" card grid-item" >
+                <img style="object-fit: cover;" onclick="showModal('{{image.name}}','{{image.description}}','{{image.image.url}}','{{image.location}}','{{image.category}}')"
+                    class="image img-responsive" src="{{image.image.url}}">
+            </div>
+            {% endfor%}
+
+        </div>
+
+    <br><br>
+
+    <div id="location">
+        <h2>LOCATIONS</h2>
+        <p>(Click on location to view photos)</p>
+        <div id="location-list">
+            {% for location in locations%}
+            <div class="col-xs-6 col-md-3 col-sm-6 col-lg-3">
+                <a href="{%url 'locations' location.name %}">{{location.name}}</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <footer> GaLLERIA </footer>
+    <footer> 2020</footer>
+
+</div>
+
+{% endblock%}

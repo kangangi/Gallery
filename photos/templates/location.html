@@ -1,0 +1,23 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<div class="container-fluid" id="index">
+    {% if location_images%}
+
+    <h1 class="header">Images taken in {{location}}</h1>
+    <div class="grid">
+
+        {% for image in location_images%}
+        <div class=" card grid-item" >
+            <img style="object-fit: cover;" onclick="showModal('{{image.name}}','{{image.description}}','{{image.image.url}}','{{image.location}}','{{image.category}}')"
+                class="image img-responsive" src="{{image.image.url}}">
+        </div>
+        {% endfor%}
+    {% else %}
+    <h1 class="header-alt">There are no images for this location</h1>
+    {% endif %}
+    <footer> GaLLERIA </footer>
+    <footer> 2020</footer>
+</div>
+
+{% endblock%}

@@ -1,0 +1,73 @@
+.grid-item { width: 400px; }
+
+#index{
+    padding-left: 130px;
+}
+
+#nav-header{
+    font-family: 'Rock Salt', cursive;
+    font-size: 22px;
+    font-weight: bold;
+    color: #096b72;
+}
+
+#navbar-text{
+    font-family: 'Zilla Slab', serif;
+    font-size: 20px;
+    color: #096b72;
+
+}
+#navbar-list{
+    font-family: 'Zilla Slab', serif;
+    font-size: 20px;
+    color: #096b72;
+}
+
+body{
+    font-family: 'Zilla Slab', serif;
+    font-size: 20px; 
+    text-align: center;
+}
+
+#location{
+    font-family: 'Zilla Slab', serif;
+    text-align: center;
+    font-size: 30px;
+    background-color:  #096b72;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 90%;   
+    padding:40px; 
+    margin: 0 auto;
+
+    
+}  
+
+#location a{
+    color: whitesmoke;
+    font-size: 25px;   
+}
+
+#location h2{
+    font-family: 'Rock Salt', cursive;
+    font-size: 40px; 
+    color: white;
+    font-weight: bold;
+    
+
+}
+
+#location p{
+    font-family: 'Zilla Slab', serif;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+#location-list{
+    display: flex;
+    flex-wrap: wrap;
+
+}
